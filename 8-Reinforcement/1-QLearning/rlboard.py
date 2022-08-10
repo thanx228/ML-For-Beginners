@@ -11,9 +11,7 @@ import math
 def clip(min,max,x):
     if x<min:
         return min
-    if x>max:
-        return max
-    return x
+    return max if x>max else x
 
 def imload(fname,size):
     img = cv2.imread(fname)
